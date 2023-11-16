@@ -68,13 +68,13 @@ header h2 i{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
     background: linear-gradient(rgb(204, 104, 25),rgb(237, 144, 22));
-    color: white;
+    
 }
 .menu th{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 10px;
     font-weight: bolder;
-    color: black;
+    color: white;
     
 }
 
@@ -99,4 +99,48 @@ header h2 i{
 
 .maincourse{
     grid-row: 2 span;
+}
+
+#menuheading, #locheading{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(128, 66, 66);
+    padding: 5px;
+    color: white;
+}
+
+
+.locations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    background: linear-gradient(rgb(204, 104, 25),rgb(237, 144, 22));
+    
+}
+.locations div{
+    flex: 1;
+    min-width: 171px;
+    padding: 1em;
+    text-align: center; 
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(128, 66, 66);
+    padding: 5px;
+    color: black;
+}
+
+.social-menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-menu li{
+    list-style: none;
+    padding: 10px;
+    color: white;
 }
