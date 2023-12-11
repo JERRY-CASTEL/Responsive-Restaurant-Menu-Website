@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added box-sizing for better layout handling */
+}
+
+body {
+    background-color: rgb(246, 233, 190);
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+.container {
+    width: 80%; 
+    max-width: 600px; 
+    padding: 20px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > h1 {
+    margin: 10px;
+    color: rgb(246, 233, 190);
+    font-size: 1.2rem; 
+}
+
+.container > h2 {
+    margin: 10px;
+    color: white;
+    font-size: 1rem; 
+}
+
+.container > textarea {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    width: 80%; 
+    box-sizing: border-box; 
+}
+
+.container > button {
+    margin-top: 20px;
+    width: 40%; 
+    height: 40px; 
+    background-color: rgb(246, 233, 190);
+    font-size: 1rem;
+    font-weight: bold;
+    word-spacing: 3px; 
+}
