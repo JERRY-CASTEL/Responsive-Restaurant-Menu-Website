@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backimg{
+    background-image: url("https://th.bing.com/th/id/R.e35ee12fbd7ad0533f485e1d03274dd5?rik=LCpFbdcAeWDZ8w&riu=http%3a%2f%2fwallpapercave.com%2fwp%2ffAwVCh3.jpg&ehk=lGN4CaEuFMjMiZTZ2nF9id7MRRJ3e1tiWELDbLGorPE%3d&risl=&pid=ImgRaw&r=0");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navigation{
+    
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#navigation h2, .menu, #handburger{
+    margin: 10px 30px 10px 30px;
+    
+}
+#navigation h2{
+    color: black;
+    font-size: 2rem;
+}
+
+
+
+.menu li{
+    display: inline-block;
+    margin-left: 20px;
+    
+    
+}
+.menu li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu li a:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+}
+
+.menubar{
+    width: 20px;
+    background-color: black ;
+    height: 3px;
+    margin-bottom:3px;
+}
+
+#handburger{
+    display: none;
+}
+
+@media only screen and (max-width: 560px) {
+    #navigation{
+        flex-direction: column;
+    }
+    #navigation li{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    .menu{
+        padding: 0;
+    }
+    #navigation h2{
+        align-self: flex-start;
+    }
+
+    #navigation li{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #handburger{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .addHiding{
+        display: none;
+    }
+
+}
+
+
+

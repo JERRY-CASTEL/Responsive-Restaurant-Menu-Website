@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 4rem auto;
+    border:8px solid rgb(129, 187, 174);
+    width: 60%;
+    min-height: 80vh;
+    border-radius: 5px;
+    box-shadow: 10px 10px 35px rgba(0,0,0,0.6);
+    position:relative;
+    background: url("1.jpeg") center/cover fixed no-repeat;
+    transition:background 1s ease-in-out;
+}
+
+.btn-left{
+    position: absolute;
+    top: 50%;
+    left:-2%;
+    background-color: white;
+    padding:.4em .6em;
+    border-radius: 2em;
+    transform:translateY(calc(-50%));
+    cursor: pointer;
+}
+
+.btn-right{
+    position: absolute;
+    top: 50%;
+    right:-2%;
+    background-color: white;
+    padding:.4em .6em;
+    border-radius: 2em;
+    transform:translateY(calc(-50%));
+    cursor: pointer;
+}
