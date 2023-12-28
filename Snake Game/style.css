@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#6C6EA0;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    color: black;
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: bolder;
+}
+
+#gameBoard {
+    border: 3px solid black;
+    ;
+}
+
+#score {
+    font-size: 2rem;
+    font-weight: bold;
+    color:  black;
+    ;
+}
