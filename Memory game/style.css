@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container h2{
+    font-size: 2em;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#gamecontainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+
+#gamecontainer div{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    font-size: 2rem;
+    color: brown;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GameCardMatricBackground i{
+    display: none;
+    
+}
+.GameCardMatricBackground {
+    border: none !important;
+    background-color: #161616;
+    opacity: 0.8;
+    background-image:  linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+.cardMatched{
+    border: none !important;
+    background-color: rgb(255, 255, 255);
+}
+#gameWon{
+    height: 100vh;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    font-size: 3rem ;
+    font-weight: bolder ;
+    margin-top: -50px;
+    color: green ;
+}
+
